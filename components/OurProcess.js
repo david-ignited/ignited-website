@@ -33,7 +33,7 @@ const DATA = [
 ]
 
 const ProcessWrapper = styled.section`
-  padding-top: 280px;
+  padding: calc(var(--pd-section) * 2) 0 var(--pd-section);
   .process-inner{
     position: relative;
     &__heading{
@@ -46,8 +46,6 @@ const ProcessWrapper = styled.section`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 42px;
-      margin-left: calc(var(--gap) * -1);
-      margin-right: calc(var(--gap) * -1);
       position: relative;
       &--card{
         background: rgba(43, 27, 78, 0.4);
@@ -135,8 +133,8 @@ export default function Process() {
                 <Image 
                   src={icon.path}
                   alt={icon.title}
-                  width={110}
-                  height={120}
+                  width={80}
+                  height={80}
                 />
                 <h3>{title}</h3>
                 <p>{text}</p>

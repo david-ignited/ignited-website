@@ -5,8 +5,7 @@ import { Container } from './styles/Globals';
 const NewsLetterWrapper = styled.section`
   --nl-border-opacity: 0.05;
   --nl-bg-opacity: 0.05;
-  padding: calc(var(--pd-section) / 2) 0 var(--pd-section);
-  background: linear-gradient(180deg ,#100d2600 0%,#0033d330 100%);
+  padding: var(--pd-section) 0 var(--pd-section);
   padding-bottom: 100px;
   position: relative;
   z-index: 5;
@@ -25,7 +24,7 @@ const NewsLetterWrapper = styled.section`
     border-width: 1px;
     border-style: solid;
     border-color: rgba(255,255,255,var(--nl-border-opacity));
-    background-color: rgba(255,255,255,var(--nl-bg-opacity));
+    background: rgba(43, 27, 78, 0.4);
     &__heading{
       grid-column: 2/span 3;
       h2{

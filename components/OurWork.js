@@ -30,8 +30,7 @@ const WorkWrapper = styled.section`
   --wText: 390px;
   --pdRow: 20px;
   --colGapRow: 60px;
-  padding-top: 280px;
-  padding-bottom: 150px;
+  padding: var(--pd-section) 0 var(--pd-section);
   .work-heading{
     max-width: 820px;
     margin: auto;

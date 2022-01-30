@@ -4,8 +4,10 @@ import Hero from './Hero';
 import Process from './OurProcess';
 import Work from './OurWork';
 import Partners from './OurPartners'
-import Footer from './Footer';
+import AboutUs from './AboutUs';
 import NewsLetter from './Newsletter';
+import Footer from './Footer';
+import Expertise from './OurExpertise';
 
 const GlobalStyles = createGlobalStyle`
   html{
@@ -62,7 +64,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: var(--body16-fs);
     line-height: var(--body16-lh);
-    color: #fff;
+    color: #938ca7;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -97,6 +99,8 @@ export default function Page({children}){
       <Process />
       <Work />
       <Partners />
+      <AboutUs />
+      <Expertise />
       <NewsLetter />
       <main>{children}</main>
       <Footer />
