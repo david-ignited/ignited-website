@@ -100,7 +100,7 @@ export default function Footer(){
               />
             </a>
           </Link>
-          <p>{new Date().getFullYear()}  ©Copyright Ignite<br/>All rights Reserved</p>
+          <p>{new Date().getFullYear()}  ©Copyright Ignite Labs<br/>All rights Reserved</p>
           <ul>
             <li>
               <a href="https://www.facebook.com/" target="__blank" aria-label="Instagram" rel="noopener">

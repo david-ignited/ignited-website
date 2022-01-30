@@ -5,6 +5,7 @@ import Process from './OurProcess';
 import Work from './OurWork';
 import Partners from './OurPartners'
 import Footer from './Footer';
+import NewsLetter from './Newsletter';
 
 const GlobalStyles = createGlobalStyle`
   html{
@@ -61,7 +62,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: var(--body16-fs);
     line-height: var(--body16-lh);
-    color: #938ca7;
+    color: #fff;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -77,6 +78,14 @@ const GlobalStyles = createGlobalStyle`
   ol, ul {
     list-style: none;
   }
+  .sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: fixed!important;
+    clip: rect(1px,1px,1px,1px);
+  }
 `;
 
 export default function Page({children}){
@@ -88,6 +97,7 @@ export default function Page({children}){
       <Process />
       <Work />
       <Partners />
+      <NewsLetter />
       <main>{children}</main>
       <Footer />
     </>
