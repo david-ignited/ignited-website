@@ -54,31 +54,12 @@ export const ConatinerFluid = styled.div`
 
 export const Container = styled.div`
   width: 100%;
+  max-width: var(--max-width);
   padding-right: var(--gap);
   padding-left: var(--gap);
   margin: 0 auto;
   position: relative;
   z-index: 9;
-  @media (min-width: 481px){
-    body & {
-      max-width: 540px;
-    }
-  }
-  @media (min-width: 768px){
-    body & {
-      max-width: 720px;
-    }
-  }
-  @media (min-width: 992px){
-    body & {
-      max-width: 100%;
-    }
-  }
-  @media (min-width: 1200px){
-    body & {
-      max-width: 1300px;
-    }
-  }
 `
 
 export const EyeBrow = styled.div`

@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeSpeed;
     font-kerning: none;
-  } 
+  }
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -72,6 +72,16 @@ const GlobalStyles = createGlobalStyle`
     margin: auto;
     overflow-x: hidden;
     text-transform: none;
+  }
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 20px;
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--black);
   }
   a {
     text-decoration: none;
