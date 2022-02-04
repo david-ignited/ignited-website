@@ -87,7 +87,7 @@ export default function Work() {
       <Container>
         <div className='work-heading'>
           <EyeBrow>AWESOME WORK</EyeBrow>
-          <H2>Our Work</H2>
+          <H2 id="nav__link--our_work">Our Work</H2>
         </div>
         <div className='work-inner'>
           {DATA.map(({id, image, title, text, tags}) => (
