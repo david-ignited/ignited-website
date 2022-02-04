@@ -6,6 +6,7 @@ const NewsLetterWrapper = styled.section`
   --nl-border-opacity: 0.05;
   --nl-bg-opacity: 0.05;
   padding: var(--pd-section) 0 var(--pd-section);
+  background: rgba(43, 27, 78, 0.4);
   padding-bottom: 100px;
   position: relative;
   z-index: 5;
@@ -19,12 +20,6 @@ const NewsLetterWrapper = styled.section`
     gap: var(--gap);
     align-items: center;
     width: 100%;
-    padding: 4rem;
-    border-radius: 0.75rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(255,255,255,var(--nl-border-opacity));
-    background: rgba(43, 27, 78, 0.4);
     &__heading{
       grid-column: 2/span 3;
       h2{
@@ -97,7 +92,7 @@ export default function NewsLetter() {
           </div>
           <div className='newsletter-inner__img'>
             <Image 
-              src="/icons_newsletter.png" 
+              src="/mail-dynamic-premium.png" 
               alt="News letter" 
               objectFit='contain'
               width={150}

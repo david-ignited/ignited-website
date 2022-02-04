@@ -8,7 +8,7 @@ const DATA = [
   {
     id: 1,
     icon: {
-      path: '/icons_exploration.svg',
+      path: '/zoom-dynamic-gradient.png',
       title: 'Exploration'
     },
     title: 'Exploration',
@@ -17,7 +17,7 @@ const DATA = [
   {
     id: 2,
     icon: {
-      path: '/icons_source.svg',
+      path: '/flash-dynamic-gradient.png',
       title: 'Source'
     },
     title: 'Source',
@@ -26,7 +26,7 @@ const DATA = [
   {
     id: 3,
     icon: {
-      path: '/icons_goals.svg',
+      path: '/medal-dynamic-gradient.png',
       title: 'Goals'
     },
     title: 'Goals',
@@ -66,15 +66,18 @@ export default function AboutUs() {
                 <Image 
                   src={icon.path}
                   alt={icon.title}
-                  width={80}
-                  height={80}
+                  width={120}
+                  height={120}
                 />
                 <div>
                   <h3>{title}</h3>
                   <p>{text}</p>
                 </div>
               </div>
-              <div className='card__glow' />
+              <div className="card__blur">
+                <div className="s2-blur is-blur-2" />
+              </div>
+              {/* <div className='card__glow' /> */}
               <div className='card__mask' />
               <div className='card__outline' />
             </Card>

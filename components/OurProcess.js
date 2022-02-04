@@ -8,7 +8,7 @@ const DATA = [
   {
     id: 1,
     icon: {
-      path: '/icons_ideation.svg',
+      path: '/bulb-dynamic-gradient.png',
       title: 'Ideation'
     },
     title: 'Ideation',
@@ -17,7 +17,7 @@ const DATA = [
   {
     id: 2,
     icon: {
-      path: '/icons_innovation.svg',
+      path: '/sheild-dynamic-gradient.png',
       title: 'Innovation'
     },
     title: 'Innovation',
@@ -26,7 +26,7 @@ const DATA = [
   {
     id: 3,
     icon: {
-      path: '/icons_acceleration.svg',
+      path: '/explorer-dynamic-gradient.png',
       title: 'Acceleration'
     },
     title: 'Acceleration',
@@ -66,15 +66,18 @@ export default function Process() {
                 <Image 
                   src={icon.path}
                   alt={icon.title}
-                  width={80}
-                  height={80}
+                  width={120}
+                  height={120}
                 />
                 <div>
                   <h3>{title}</h3>
                   <p>{text}</p>
                 </div>
               </div>
-              <div className='card__glow' />
+              <div className="card__blur">
+                <div className="s2-blur is-blur-2" />
+              </div>
+              {/* <div className='card__glow' /> */}
               <div className='card__mask' />
               <div className='card__outline' />
             </Card>

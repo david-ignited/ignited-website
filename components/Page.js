@@ -33,7 +33,8 @@ const GlobalStyles = createGlobalStyle`
     /* Base colors */
     --dark-blue: #100d26;
     --light-blue: #0033D3;
-    --purple: #9B03F3;
+    --purple: #ff008a;
+    --yellow: #ffc83a;
     --black: #06071b;
     /* Backgrounds colors */
     --bg: var(--dark-blue);
@@ -77,7 +78,7 @@ const GlobalStyles = createGlobalStyle`
     width: 10px;
   }
   body::-webkit-scrollbar-thumb {
-    background: var(--purple);
+    background: var(--light-blue);
     border-radius: 20px;
   }
   body::-webkit-scrollbar-track {

@@ -16,6 +16,7 @@ const HeroWrapper = styled.section`
         line-height: var(--h1-lh);
         display: block;
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(98.94deg, var(--purple) 0.87%,  var(--light-blue) 57.85%);
+        /* background: linear-gradient(90deg,#ffc83a,#ff008a 55%,#6100ff); */
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
