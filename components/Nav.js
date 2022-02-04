@@ -1,5 +1,4 @@
-/* import Link from 'next/link'; */
-import {Link} from 'react-scroll';
+import Link from 'next/link';
 import NavStyles from './styles/NavStyles';
 
 import { BtnLink, Divide } from './styles/Globals';
@@ -9,21 +8,21 @@ export default function Nav() {
     <NavStyles>
       <ul>
         <li>
-          <Link to='/' className="nav__link" >What we do</Link>
+          <Link href="/"><a>What we do</a></Link>
         </li>
         <li>
-          <Link to="nav__link--our_process" className="nav__link" smooth={true} duration={1000} offset={-80}>Our Process</Link>
+          <Link href="/"><a>Our Process</a></Link>
         </li>
         <li>
-          <Link to="nav__link--our_work" className="nav__link" smooth={true} duration={1000} offset={-80}>Our Work</Link>
+          <Link href="/"><a>Our Work</a></Link>
         </li>
         <li>
-          <Link to="nav__link--about_us" className="nav__link" smooth={true} duration={1000} offset={-80}>About Us</Link>
+          <Link href="/"><a>About Us</a></Link>
         </li>
       </ul>
       <Divide />
       <BtnLink small>
-        <Link to="/">Get in touch</Link> 
+        <Link href="/"><a>Get in touch</a></Link> 
       </BtnLink>
     </NavStyles>
   );

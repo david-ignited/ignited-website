@@ -104,7 +104,7 @@ const GlobalStyles = createGlobalStyle`
 export default function Page({children}){
   return(
     <>
-      <GlobalStyles style={{scrollBehavior:'smooth'}} />
+      <GlobalStyles />
       <Header />
       <Hero />
       <AboutUs />
