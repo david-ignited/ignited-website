@@ -106,10 +106,10 @@ export default function Page({children}){
       <GlobalStyles />
       <Header />
       <Hero />
-      <Process />
-      <Work />
-      <Partners />
       <AboutUs />
+      <Work />
+      <Process />
+      <Partners />
       <Expertise />
       <NewsLetter />
       <main>{children}</main>
