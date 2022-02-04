@@ -1,7 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { BtnLink, Container } from './styles/Globals';
+
+const a = keyframes`
+  0% {
+    transform: translateZ(0);
+  }
+  50% {
+    transform: translate3d(-1.5rem,-1.5rem,0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+`;
 
 const HeroWrapper = styled.section`
   padding-top: var(--header-height);
@@ -37,6 +49,7 @@ const HeroWrapper = styled.section`
         mix-blend-mode: screen;
         z-index: 20;
         margin: auto;
+        animation: ${a} 2s linear infinite;
       }
       &--bg{
         position: absolute;
@@ -87,7 +100,7 @@ export default function Hero() {
           <div className='hero-inner__img'>
             <div className='hero-inner__img--hnd'>
               <Image 
-                src="/hand.png"
+                src="/rocket-dynamic-color.png"
                 alt="We ignite your future"
                 layout="fill"
                 objectFit="cover"
