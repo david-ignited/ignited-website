@@ -57,7 +57,7 @@ export default function Process() {
         <div className='process-inner'>
           <div className='process-inner__heading'>
             <EyeBrow>AWESOME FEATURES</EyeBrow>
-            <H2 id="nav__link--our_process">Our Process</H2>
+            <H2>Our Process</H2>
           </div>
           <Grid>
           {DATA.map(({id, icon, title, text}) => (
