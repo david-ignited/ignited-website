@@ -20,7 +20,18 @@ const NavStyles = styled.ul`
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: 0.3s;
+        background-image:linear-gradient(90deg, #166FEF,#9E00F3);
+        background-size:0% 3px;
+        background-repeat: no-repeat;
+        background-position:50% 70%;
+        cursor:pointer;
+        transition:300ms ease;
+        
+        &:hover{
+          color:white;
+          background-size:80% 3px;
+        }
+
         /* &:before{
           content: "";
           width: calc(100% - 50px);

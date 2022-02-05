@@ -57,7 +57,7 @@ export default function AboutUs() {
         <div className='process-inner'>
           <div className='process-inner__heading'>
             <EyeBrow>who we are</EyeBrow>
-            <H2>About Us</H2>
+            <H2 id="nav__link--about_us">About Us</H2>
           </div>
           <Grid>
           {DATA.map(({id, icon, title, text}) => (
