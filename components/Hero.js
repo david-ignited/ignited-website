@@ -71,11 +71,56 @@ const HeroWrapper = styled.section`
       margin-bottom: 20px;
     }
     &__list{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  
       li {
-        display: inline-block;
-        &:not(:last-child){
+     
+        padding: 0 20px;
+       /*  &:not(:last-child){
           margin-right: 50px;
+        } */
+      }
+    }
+  }
+
+  @media (max-width:768px){
+    
+    .hero-inner{
+      grid-template-columns:1fr;
+      margin-bottom:auto;
+
+      &__content{
+        
+        grid-row:1/-1;
+        grid-column: 1 / -1;
+        padding:2rem;
+        text-align:center;
+    
+        & p{
+          text-align:left;
+          margin: auto;
         }
+        &-btn{
+          left:70%;
+          transform: scale(.8);
+        }
+      }
+      
+      &__img{
+        grid-column-start:1;
+        grid-column: 1 / -1;
+        grid-row:1 / -1;
+        opacity:0.2;
+        &--hnd{
+        width: 200px;
+        height: 300px;
+        position: relative;
+        mix-blend-mode: screen;
+        z-index: 20;
+        animation: ${a} 2s linear infinite;
       }
     }
   }
@@ -92,7 +137,7 @@ export default function Hero() {
             <h2>We Ignite <br />Your Ideas</h2>
             <div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut viverra velit urna, a posuere libero vestibulum eget, orci varius natoque penatibus et magnis dis parturient.</p>
-              <BtnLink>
+              <BtnLink className="hero-inner__content-btn">
                 <Link href="/"><a>Learn More</a></Link> 
               </BtnLink>
             </div>
@@ -123,8 +168,8 @@ export default function Hero() {
               <Image 
                 src="/logos_saleforce.png" 
                 alt="Ruby" 
-                width={32}
-                height={32}
+                width={120}
+                height={70}
               />
             </li>
             <li>
